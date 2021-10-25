@@ -1,0 +1,22 @@
+command = input(str("> "))
+if command == 'cmd':
+ print("loading")
+ print("""help:
+ -modify 1- changes password and username
+ -say -shows provided input""")
+ 
+cmd = input(str(">cmd "))
+if cmd == 'modify 1':
+    name= input(str("[i]: Please enter new username: "))
+    pas= input(str("[i]: Please enter the new password to be used: "))
+    lines= [name]
+    with open('C:/Users/Yolo5/Desktop/cannon OS/user/username.txt', 'w') as f:
+        f.writelines(name)
+    lines2= [name]
+    with open('C:/Users/Yolo5/Desktop/cannon OS/user/password.txt', 'w') as f:
+        f.writelines(pas)
+if cmd == 'say':
+     text = input(str("text: "))
+     print("<print>: " +text)
+while True:
+ input(str(">cmd "))
